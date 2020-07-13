@@ -12,8 +12,8 @@ class TestExampleCollection extends TestCase
     public function testFillCollection()
     {
         $exampleCollection = new ExampleCollection();
-        $exampleCollection->add(new ExampleItem());
-        $exampleCollection->add(new ExampleItem());
+        $exampleCollection->append(new ExampleItem());
+        $exampleCollection->append(new ExampleItem());
 
         foreach ($exampleCollection as $exampleItem)
         {
@@ -27,6 +27,6 @@ class TestExampleCollection extends TestCase
     public function testExceptionCollection()
     {
         $exampleCollection = new ExampleCollection();
-        $exampleCollection->add('it is not an instance of ' . ExampleItem::class);
+        $exampleCollection->append('it is not an instance of ' . ExampleItem::class);
     }
 }

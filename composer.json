@@ -22,5 +22,7 @@
             "email": "zamyatin.daniil@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "doctrine/collections": "^1.6"
+    }
 }
